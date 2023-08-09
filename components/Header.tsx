@@ -27,17 +27,21 @@ function Header({ }: Props) {
 
             className="flex flex-row items-center" >
             {/* Social Icons */}
+            <div className="linkBtn">
             <SocialIcon url="https://twitter.com/lunganart"
                 fgColor="gray"
                 bgColor="transparent"
             />
+            </div>
+            <div className="linkBtn">
             <SocialIcon url="https://www.instagram.com/_lungan_/"
                 fgColor="gray"
                 bgColor="transparent"
             />
-
+            </div>
 
             {/* icon link */}
+            <div className="linkBtn">
             <a href="https://www.artstation.com/lungan" target="_blank" rel="noopener noreferrer">
                 <div style={{
                     display: 'inline-block',
@@ -89,6 +93,7 @@ function Header({ }: Props) {
                     </div>
                 </div>
             </a>
+            </div>
         </motion.div >
         <motion.div
             initial={{
@@ -105,6 +110,7 @@ function Header({ }: Props) {
                 duration: 1.5,
             }}
             className="flex flex-row items-center text-gray-300 cursor-pointer" >
+                <div className="linkBtn">
             <SocialIcon
                 className="cursor-pointer"
                 network="email"
@@ -112,6 +118,7 @@ function Header({ }: Props) {
                 bgColor="transparent"
             />
             <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get In Touch</p>
+            </div>
         </motion.div>
     </header>;
 }
